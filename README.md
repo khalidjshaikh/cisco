@@ -1,5 +1,12 @@
 # Scripting assignment - Coding
 
+### Security
+- Source code could be in a private GitHub repository
+- Exception handling could be written around the requests.get
+- The API key could be stored in a secret manager or in an encrypted way
+- Validation could be performed on the variable used to store the mac address
+
+### Build image
 `docker build -t cisco .`
 ```
 [+] Building 0.3s (9/9) FINISHED                                                          
@@ -20,6 +27,8 @@
  => => naming to docker.io/library/cisco                                             0.0s
 
 Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+### Run container
 ```
 `docker run cisco`
 
@@ -29,6 +38,8 @@ macaddress.py <mac address>
 Example:
   macaddress.py 14:7d:da:d9:4d:75
 ```
+
+### Run valid usage of tool
 `docker run cisco 14:7d:da:d9:4d:75`
 ```
 Apple, Inc
